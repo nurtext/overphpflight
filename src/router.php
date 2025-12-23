@@ -12,7 +12,7 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER['REQUEST_URI'])) {
             // Create a new object
             $obj = new \stdClass();
             $obj->title    = basename($filename);
-            $obj->location = 'overphplight';
+            $obj->location = 'overphpflight';
             $obj->url_img  = \sprintf('http://%1$s/%2$s', $_SERVER['HTTP_HOST'], $filename);
         }
 
